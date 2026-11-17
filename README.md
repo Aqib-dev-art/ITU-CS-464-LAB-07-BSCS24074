@@ -42,7 +42,7 @@ Every screen has a forward and/or back path. Back buttons are always top-left (`
 
 | Annotated colour | Greyscale |
 |---|---|
-| ![](docs/annotated/01-title-annotated.png) | ![](docs/greyscale/01-title-greyscale.png) |
+| ![](docs/01-title-annotated.png) | ![](docs/01-title-greyscale.png) |
 
 - **Purpose:** First impression and single clear entry point.
 - **Principles / techniques:** Strong hierarchy by size (logo 200 pt > call to action 74 pt > tagline 52 pt); cyan vs magenta word split gives identity; low-alpha planets add depth without competing with text; full-screen invisible tap area = very large touch target; bottom-anchored call to action in the thumb zone.
@@ -53,7 +53,7 @@ Every screen has a forward and/or back path. Back buttons are always top-left (`
 
 | Annotated colour | Greyscale |
 |---|---|
-| ![](docs/annotated/02-mainmenu-annotated.png) | ![](docs/greyscale/02-mainmenu-greyscale.png) |
+| ![](docs/02-mainmenu-annotated.png) | ![](docs/02-mainmenu-greyscale.png) |
 
 - **Purpose:** Hub that leads to Play, Shop, Settings and Credits.
 - **Principles / techniques:** One dominant filled PLAY button (860x260, 96 pt) vs three smaller outlined secondary buttons (860x160) – clear primary/secondary hierarchy; consistent button widths and even spacing (grouping + alignment); outline on secondary buttons keeps them visible in greyscale; consistent `< BACK` in the header.
@@ -64,7 +64,7 @@ Every screen has a forward and/or back path. Back buttons are always top-left (`
 
 | Annotated colour | Greyscale |
 |---|---|
-| ![](docs/annotated/03-mode-annotated.png) | ![](docs/greyscale/03-mode-greyscale.png) |
+| ![](docs/03-mode-annotated.png) | ![](docs/03-mode-greyscale.png) |
 
 - **Purpose:** Choose Time Trial, Endless or Versus before continuing.
 - **Principles / techniques:** Three equal cards (900x300) in a `ToggleGroup` – exactly one always selected (no invalid state); selected card shows a magenta frame **and** a "SELECTED" tag (non-colour cue); title 66 pt vs description 40 pt in subtext colour; NEXT anchored at the bottom.
@@ -75,7 +75,7 @@ Every screen has a forward and/or back path. Back buttons are always top-left (`
 
 | Annotated colour | Greyscale |
 |---|---|
-| ![](docs/annotated/04-level-annotated.png) | ![](docs/greyscale/04-level-greyscale.png) |
+| ![](docs/04-level-annotated.png) | ![](docs/04-level-greyscale.png) |
 
 - **Purpose:** Pick a level from a 3x3 grid.
 - **Principles / techniques:** 280x280 square cards on an even grid (alignment, repetition); levels 1–3 READY, 4–9 LOCKED with dimmed body, grey number and a text label (disabled state not communicated by colour alone); selected state identical to Mode screen (consistency).
@@ -86,7 +86,7 @@ Every screen has a forward and/or back path. Back buttons are always top-left (`
 
 | Annotated colour | Greyscale |
 |---|---|
-| ![](docs/annotated/05-loadout-annotated.png) | ![](docs/greyscale/05-loadout-greyscale.png) |
+| ![](docs/05-loadout-annotated.png) | ![](docs/05-loadout-greyscale.png) |
 
 - **Purpose:** Choose a ship (Viper / Titan / Comet) and compare speed vs armour.
 - **Principles / techniques:** Same card pattern as Mode (consistency); ship icons are colour-coded cyan / magenta / gold and also differ in value, with stats as text; right-aligned icons balance left-aligned text; START RUN is the single primary action.
@@ -97,7 +97,7 @@ Every screen has a forward and/or back path. Back buttons are always top-left (`
 
 | Annotated colour | Greyscale |
 |---|---|
-| ![](docs/annotated/06-shop-annotated.png) | ![](docs/greyscale/06-shop-greyscale.png) |
+| ![](docs/06-shop-annotated.png) | ![](docs/06-shop-greyscale.png) |
 
 - **Purpose:** Spend coins on upgrades.
 - **Principles / techniques:** Gold = currency everywhere (coin pill with gold outline, gold price buttons); 2x2 card grid with icon -> name -> effect -> price buttons in a fixed order; "SOLD OUT" is a disabled, low-contrast button with a text label; coin balance sits in the header where it is always visible.
@@ -108,7 +108,7 @@ Every screen has a forward and/or back path. Back buttons are always top-left (`
 
 | Annotated colour | Greyscale |
 |---|---|
-| ![](docs/annotated/07-settings-annotated.png) | ![](docs/greyscale/07-settings-greyscale.png) |
+| ![](docs/07-settings-annotated.png) | ![](docs/07-settings-greyscale.png) |
 
 - **Purpose:** Adjust music, sound FX and vibration.
 - **Principles / techniques:** Settings grouped on one panel card; labels left-aligned above sliders; large 80 px handles for touch; vibration toggle shows ON/OFF **text** as well as cyan/grey fill; SAVE & BACK is the only exit action.
@@ -119,7 +119,7 @@ Every screen has a forward and/or back path. Back buttons are always top-left (`
 
 | Annotated colour | Greyscale |
 |---|---|
-| ![](docs/annotated/08-pause-annotated.png) | ![](docs/greyscale/08-pause-greyscale.png) |
+| ![](docs/08-pause-annotated.png) | ![](docs/08-pause-greyscale.png) |
 
 - **Purpose:** Freeze the run and offer Resume, Restart or Quit.
 - **Principles / techniques:** RESUME is the largest, cyan, and nearest the centre (safest and most common choice); RESTART and QUIT TO MENU are outlined secondary buttons; destructive choice (quit) is last; score shown for context.
@@ -130,7 +130,7 @@ Every screen has a forward and/or back path. Back buttons are always top-left (`
 
 | Annotated colour | Greyscale |
 |---|---|
-| ![](docs/annotated/09-results-annotated.png) | ![](docs/greyscale/09-results-greyscale.png) |
+| ![](docs/09-results-annotated.png) | ![](docs/09-results-greyscale.png) |
 
 - **Purpose:** Reward the player and offer Retry or Menu.
 - **Principles / techniques:** Score is the biggest element (190 pt gold) – clear focal point; stars and "NEW BEST!" below in descending importance; RETRY primary, MENU secondary; `< MENU` in the header gives a consistent exit.
@@ -141,7 +141,7 @@ Every screen has a forward and/or back path. Back buttons are always top-left (`
 
 | Annotated colour | Greyscale |
 |---|---|
-| ![](docs/annotated/10-credits-annotated.png) | ![](docs/greyscale/10-credits-greyscale.png) |
+| ![](docs/10-credits-annotated.png) | ![](docs/10-credits-greyscale.png) |
 
 - **Purpose:** Attribute design, fonts, sprites and inspiration.
 - **Principles / techniques:** Single readable panel card, centred text 48 pt, high-contrast light text on dark panel; consistent header and `< BACK`.
