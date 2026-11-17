@@ -42,129 +42,119 @@ Every screen has a forward and/or back path. Back buttons are always top-left (`
 
 | Annotated colour | Greyscale |
 |---|---|
-| ![](screenshots/01-title-colour-annotated.png) | ![](screenshots/01-title-greyscale.png) |
+| ![](docs/annotated/01-title-annotated.png) | ![](docs/greyscale/01-title-greyscale.png) |
 
 - **Purpose:** First impression and single clear entry point.
 - **Principles / techniques:** Strong hierarchy by size (logo 200 pt > call to action 74 pt > tagline 52 pt); cyan vs magenta word split gives identity; low-alpha planets add depth without competing with text; full-screen invisible tap area = very large touch target; bottom-anchored call to action in the thumb zone.
 - **Tweens:** `Pulse` on "TAP TO START" – sine loop (ease in-out), scale 1 ± 0.06, speed 2 – signals that the text is interactive. Screen exit uses the global transition.
-- **Greyscale check:** [STATE WHAT YOU CHANGED, OR "No change needed – logo words differ in value (cyan ≈ 173 vs magenta ≈ 129) and both are far brighter than the background"].
-- **Callouts to draw:** logo hierarchy; pulsing CTA; planets (depth); full-screen tap area.
+- **Greyscale check:** No change needed – the logo words differ in value (cyan ≈ 173 vs magenta ≈ 129) and both are far brighter than the background; the tagline and TAP TO START stay readable.
 
 ## 02 – Main Menu
 
 | Annotated colour | Greyscale |
 |---|---|
-| ![](screenshots/02-mainmenu-colour-annotated.png) | ![](screenshots/02-mainmenu-greyscale.png) |
+| ![](docs/annotated/02-mainmenu-annotated.png) | ![](docs/greyscale/02-mainmenu-greyscale.png) |
 
 - **Purpose:** Hub that leads to Play, Shop, Settings and Credits.
 - **Principles / techniques:** One dominant filled PLAY button (860x260, 96 pt) vs three smaller outlined secondary buttons (860x160) – clear primary/secondary hierarchy; consistent button widths and even spacing (grouping + alignment); outline on secondary buttons keeps them visible in greyscale; consistent `< BACK` in the header.
 - **Tweens:** Button press/release (EaseOutQuad / EaseOutBack); global slide transition.
-- **Greyscale check:** [FILL IN]
-- **Callouts to draw:** primary vs secondary hierarchy; spacing/alignment guides; back button; touch-target size.
+- **Greyscale check:** No change needed – the filled PLAY button is clearly lighter than the outlined secondary buttons, and the outlines keep them visible without hue.
 
 ## 03 – Mode Select
 
 | Annotated colour | Greyscale |
 |---|---|
-| ![](screenshots/03-mode-colour-annotated.png) | ![](screenshots/03-mode-greyscale.png) |
+| ![](docs/annotated/03-mode-annotated.png) | ![](docs/greyscale/03-mode-greyscale.png) |
 
 - **Purpose:** Choose Time Trial, Endless or Versus before continuing.
 - **Principles / techniques:** Three equal cards (900x300) in a `ToggleGroup` – exactly one always selected (no invalid state); selected card shows a magenta frame **and** a "SELECTED" tag (non-colour cue); title 66 pt vs description 40 pt in subtext colour; NEXT anchored at the bottom.
 - **Tweens:** `ToggleMarker` – the SELECTED tag pops in with **EaseOutBack** (0.6 -> 1.0 scale, 0.25 s) so the change of state is noticed; card press feedback.
-- **Greyscale check:** [FILL IN]
-- **Callouts to draw:** selected frame + tag; text hierarchy inside card; NEXT button.
+- **Greyscale check:** No change needed – the selected card is separated by its border and the SELECTED tag (text), not only by pink vs navy.
 
 ## 04 – Level Select
 
 | Annotated colour | Greyscale |
 |---|---|
-| ![](screenshots/04-level-colour-annotated.png) | ![](screenshots/04-level-greyscale.png) |
+| ![](docs/annotated/04-level-annotated.png) | ![](docs/greyscale/04-level-greyscale.png) |
 
 - **Purpose:** Pick a level from a 3x3 grid.
 - **Principles / techniques:** 280x280 square cards on an even grid (alignment, repetition); levels 1–3 READY, 4–9 LOCKED with dimmed body, grey number and a text label (disabled state not communicated by colour alone); selected state identical to Mode screen (consistency).
 - **Tweens:** SELECTED tag pop (EaseOutBack); press feedback only on unlocked cards (locked cards give no false affordance).
-- **Greyscale check:** [FILL IN]
-- **Callouts to draw:** locked vs ready; selected card; grid spacing; NEXT.
+- **Greyscale check:** No change needed – LOCKED tiles are much darker with grey text, READY tiles are bright, and the selected tile has a border and tag.
 
 ## 05 – Loadout
 
 | Annotated colour | Greyscale |
 |---|---|
-| ![](screenshots/05-loadout-colour-annotated.png) | ![](screenshots/05-loadout-greyscale.png) |
+| ![](docs/annotated/05-loadout-annotated.png) | ![](docs/greyscale/05-loadout-greyscale.png) |
 
 - **Purpose:** Choose a ship (Viper / Titan / Comet) and compare speed vs armour.
 - **Principles / techniques:** Same card pattern as Mode (consistency); ship icons are colour-coded cyan / magenta / gold and also differ in value, with stats as text; right-aligned icons balance left-aligned text; START RUN is the single primary action.
 - **Tweens:** SELECTED tag EaseOutBack pop; press feedback.
-- **Greyscale check:** [FILL IN]
-- **Callouts to draw:** icon + stats grouping; selected state; START RUN.
+- **Greyscale check:** No change needed – the selected ship has a border and SELECTED tag; the cyan and magenta icons differ in value and each ship also has its name and stats as text.
 
 ## 06 – Shop
 
 | Annotated colour | Greyscale |
 |---|---|
-| ![](screenshots/06-shop-colour-annotated.png) | ![](screenshots/06-shop-greyscale.png) |
+| ![](docs/annotated/06-shop-annotated.png) | ![](docs/greyscale/06-shop-greyscale.png) |
 
 - **Purpose:** Spend coins on upgrades.
 - **Principles / techniques:** Gold = currency everywhere (coin pill with gold outline, gold price buttons); 2x2 card grid with icon -> name -> effect -> price buttons in a fixed order; "SOLD OUT" is a disabled, low-contrast button with a text label; coin balance sits in the header where it is always visible.
 - **Tweens:** Press/release feedback on price buttons; global slide transition.
-- **Greyscale check:** [FILL IN]
-- **Callouts to draw:** coin counter; price button; sold-out disabled state; card structure.
+- **Greyscale check:** No change needed – gold price buttons are bright, while SOLD OUT is dark with a text label; the coin pill keeps its outline.
 
 ## 07 – Settings
 
 | Annotated colour | Greyscale |
 |---|---|
-| ![](screenshots/07-settings-colour-annotated.png) | ![](screenshots/07-settings-greyscale.png) |
+| ![](docs/annotated/07-settings-annotated.png) | ![](docs/greyscale/07-settings-greyscale.png) |
 
 - **Purpose:** Adjust music, sound FX and vibration.
 - **Principles / techniques:** Settings grouped on one panel card; labels left-aligned above sliders; large 80 px handles for touch; vibration toggle shows ON/OFF **text** as well as cyan/grey fill; SAVE & BACK is the only exit action.
 - **Tweens:** Toggle label pops with EaseOutBack (`ToggleMarker`); press feedback; global transition.
-- **Greyscale check:** [FILL IN]
-- **Callouts to draw:** slider handle/fill; ON/OFF text cue; panel grouping; SAVE & BACK.
+- **Greyscale check:** No change needed – slider fill is lighter than its track, handles are near-white, and the vibration toggle says ON as text.
 
 ## 08 – Pause
 
 | Annotated colour | Greyscale |
 |---|---|
-| ![](screenshots/08-pause-colour-annotated.png) | ![](screenshots/08-pause-greyscale.png) |
+| ![](docs/annotated/08-pause-annotated.png) | ![](docs/greyscale/08-pause-greyscale.png) |
 
 - **Purpose:** Freeze the run and offer Resume, Restart or Quit.
 - **Principles / techniques:** RESUME is the largest, cyan, and nearest the centre (safest and most common choice); RESTART and QUIT TO MENU are outlined secondary buttons; destructive choice (quit) is last; score shown for context.
 - **Tweens:** `PauseTimeScale` sets `Time.timeScale = 0` while open; every UI tween uses unscaled time so transitions and feedback still animate. Global transition.
-- **Greyscale check:** [FILL IN]
-- **Callouts to draw:** RESUME dominance; button order; score reminder.
+- **Greyscale check:** No change needed – RESUME is the brightest and largest button; RESTART and QUIT TO MENU are outlined and visibly lower in value.
 
 ## 09 – Results
 
 | Annotated colour | Greyscale |
 |---|---|
-| ![](screenshots/09-results-colour-annotated.png) | ![](screenshots/09-results-greyscale.png) |
+| ![](docs/annotated/09-results-annotated.png) | ![](docs/greyscale/09-results-greyscale.png) |
 
 - **Purpose:** Reward the player and offer Retry or Menu.
 - **Principles / techniques:** Score is the biggest element (190 pt gold) – clear focal point; stars and "NEW BEST!" below in descending importance; RETRY primary, MENU secondary; `< MENU` in the header gives a consistent exit.
 - **Tweens:** `CountUp` – score counts 0 -> 12,450 over 1.2 s with **EaseOutCubic** (fast start, settles on the final number); `PopInSequence` – three stars pop in one by one (0.4 s initial wait, 0.15 s stagger, 0.35 s each) with **EaseOutBack** so the reward feels earned and sequential.
-- **Greyscale check:** [FILL IN]
-- **Callouts to draw:** score hierarchy; star sequence; RETRY vs MENU.
+- **Greyscale check:** No change needed – the score is the lightest and largest element, and the gold coins stay distinct from the dark background.
 
 ## 10 – Credits
 
 | Annotated colour | Greyscale |
 |---|---|
-| ![](screenshots/10-credits-colour-annotated.png) | ![](screenshots/10-credits-greyscale.png) |
+| ![](docs/annotated/10-credits-annotated.png) | ![](docs/greyscale/10-credits-greyscale.png) |
 
 - **Purpose:** Attribute design, fonts, sprites and inspiration.
 - **Principles / techniques:** Single readable panel card, centred text 48 pt, high-contrast light text on dark panel; consistent header and `< BACK`.
 - **Tweens:** Global slide transition and button feedback only (a static reading screen should not compete with motion).
-- **Greyscale check:** [FILL IN]
-- **Callouts to draw:** panel contrast; back button; credit grouping.
+- **Greyscale check:** No change needed – light text on the dark panel keeps high contrast in greyscale.
 
 ---
 
 ## Credits and references
 
-- Design and Unity implementation: Raza Butt
+- Design and Unity implementation: M.Aqib Ramzan
 - Font: Liberation Sans (TextMeshPro default, SIL OFL)
 - UI sprites: Unity built-in UI skin (`UISprite`, `Knob`)
 - Visual inspiration: Subway Surfers and Brawl Stars menus (layout and button hierarchy ideas only; no assets used)
 - Easing formulas: standard Penner equations (EaseOutCubic, EaseInCubic, EaseOutQuad, EaseOutBack)
-- Tools used: [LIST ANY TOOLS/AI ASSISTANCE AS REQUIRED BY YOUR COURSE POLICY]
+- Tools used: Unity 6.3 LTS, TextMeshPro. Annotation boxes and arrows were added to my own Unity screenshots with a Python (Pillow) script written with help from Claude (AI assistant), which also helped with Git instructions. No AI-generated images were used.
