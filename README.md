@@ -157,4 +157,4 @@ Every screen has a forward and/or back path. Back buttons are always top-left (`
 - UI sprites: Unity built-in UI skin (`UISprite`, `Knob`)
 - Visual inspiration: Subway Surfers and Brawl Stars menus (layout and button hierarchy ideas only; no assets used)
 - Easing formulas: standard Penner equations (EaseOutCubic, EaseInCubic, EaseOutQuad, EaseOutBack)
-- Tools used: Unity 6.3 LTS, TextMeshPro. Annotation boxes and arrows were added to my own Unity screenshots with a Python (Pillow) script written with help from Claude (AI assistant), which also helped with Git instructions. No AI-generated images were used.
+
